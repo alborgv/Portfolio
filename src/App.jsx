@@ -44,7 +44,7 @@ function App() {
                                 },
                             }}
                             href="/assets/HOJA DE VIDA AA.pdf"  
-                            download="HOJA DE VIDA AA.pdf"
+                            download="HOJA_DE_VIDA_AA.pdf"
                             >
 
                             Descargar CV
