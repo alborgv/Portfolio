@@ -43,8 +43,8 @@ function App() {
                                     backgroundColor: '#3b79db',
                                 },
                             }}
-                            href="/assets/HOJA DE VIDA AA.pdf"  
-                            download="HOJA_DE_VIDA_AA.pdf"
+                            href="/assets/HOJA_DE_VIDA_AA.pdf"  
+                            download="HOJA DE VIDA AA.pdf"
                             >
 
                             Descargar CV
