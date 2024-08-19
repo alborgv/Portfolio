@@ -37,14 +37,14 @@ function App() {
                             sx={{
                                 marginTop: 2,
                                 color: '#f9fafb',
-                                border: '1px solid #fff',   // Borde del botón
-                                backgroundColor: '#60a5fa',    // Fondo del botón
+                                border: '1px solid #fff',   
+                                backgroundColor: '#60a5fa', 
                                 '&:hover': {
-                                    backgroundColor: '#3b79db', // Fondo del botón al pasar el ratón
+                                    backgroundColor: '#3b79db',
                                 },
                             }}
-                            href="/path/to/your-cv.pdf"  // Reemplaza con la ruta a tu archivo CV
-                            download="CV_Abel_Albor.pdf"  // Nombre del archivo que se descargará
+                            href="/assets/HOJA DE VIDA AA.pdf"  
+                            download="HOJA DE VIDA AA.pdf"
                             >
 
                             Descargar CV
