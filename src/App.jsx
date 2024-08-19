@@ -11,7 +11,7 @@ import viteLogo from './assets/vite-logo.png'
 import muiLogo from './assets/mui-logo.png'
 import prestamosImg from './assets/prestamos.png'
 
-import hojaDeVida from './assets/HOJA_DE_VIDA_AA'
+import hojaDeVida from './assets/HOJA_DE_VIDA_AA.pdf'
 
 import { RiArrowDownWideLine } from "react-icons/ri";
 import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material';
@@ -45,7 +45,7 @@ function App() {
                                     backgroundColor: '#3b79db',
                                 },
                             }}
-                            href={hojaDeVida}  
+                            href={hojaDeVida}
                             download="HOJA DE VIDA AA.pdf"
                             >
 
