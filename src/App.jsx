@@ -23,16 +23,20 @@ import './App.css'
 import Navbar from './utils/Navbar'
 
 function App() {
-    const [count, setCount] = useState(0)
 
     return (
         <>
             <Navbar />
+            {/* <div>
+                <section id="inicio" className='flex flex-col items-center bg-gradient-to-r from-blue-start to-blue-end p-6 md:p-24 w-full'>
+                    <div className='flex flex-col items-center mt-20 md:mt-40 mb-24 md:mb-48 w-full md:w-3/4 lg:w-2/3 xl:1/2'> */}
             <div>
-                <section id="inicio" className='flex flex-col items-center bg-gradient-to-r from-blue-start to-blue-end p-24'>
-                    <div className='flex flex-col items-center mt-40 mb-48'>
-                        <ReactTyped className='font-lato text-6xl text-white' strings={["¡HOLA, SOY ABEL ALBOR!"]} typeSpeed={60} />
-                        <span className='font-bold text-3xl font-lato items-center text-blue-400'>DESARROLLADOR FULLSTACK</span>
+                <section id="inicio" className='flex flex-col items-center bg-gradient-to-r from-blue-start to-blue-end pt-44 pb-72 md:p-20 w-full'>
+                    <div className='flex flex-col items-center mt-40 mb-48 w-full md:w-4/5 lg:w-2/3 xl:1/2'>
+                        <ReactTyped className='font-lato text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white'
+                            strings={["¡HOLA, SOY ABEL ALBOR!"]} 
+                            typeSpeed={60} />
+                        <span className='font-bold text-sm md:text-3xl font-lato items-center text-blue-400'>DESARROLLADOR FULLSTACK</span>
       
                         <Button
                             size="small"
@@ -55,7 +59,7 @@ function App() {
                         <RiArrowDownWideLine
                             size={50}
                             style={{
-                                marginTop: '-70px',
+                                marginTop: '-20px',
                                 color: 'white',
                                 animation: 'float 2s ease-in-out infinite'
                             }}
@@ -74,11 +78,13 @@ function App() {
                                 }
                             }
                         `}</style>
-                </section>
-                <section id="info" className='bg-blue-mid p-24'>
+            </section >
+
+
+                <section id="info" className='bg-blue-mid p-6 md:p-24'>
                     <div className="max-w-2xl flex flex-col mx-auto">
 
-                        <span className='text-white font-lato text-2xl font-bold'>Sobre mí.</span>
+                        <span className='text-white font-lato text-2xl mt-4 md:text-3xl font-bold'>Sobre mí.</span>
                         <hr className='mt-2 mb-4'/>
                         <div className='text-white font-lato flex flex-col'>
 
@@ -109,65 +115,65 @@ function App() {
 
                             <div>
                                 <span className='text-white font-lato font-bold text-xl'>Habilidades</span>
-                                <div className='mt-8 grid grid-cols-6 gap-6'>
+                                <div className='mt-8 grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6'>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={pythonLogo} alt='Python Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>Python</span>
+                                        <img src={pythonLogo} alt='Python Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>Python</span>
                                     </div>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={jsLogo} alt='JavaScript Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>JavaScript</span>
+                                        <img src={jsLogo} alt='JavaScript Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>JavaScript</span>
                                     </div>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={djangoLogo} alt='Django Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>Django</span>
+                                        <img src={djangoLogo} alt='Django Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>Django</span>
                                     </div>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={reactLogo} alt='React Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>React</span>
+                                        <img src={reactLogo} alt='React Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>React</span>
                                     </div>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={tailwindLogo} alt='Tailwind Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>Tailwind</span>
+                                        <img src={tailwindLogo} alt='Tailwind Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>Tailwind</span>
                                     </div>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={githubLogo} alt='GitHub Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>GitHub</span>
+                                        <img src={githubLogo} alt='GitHub Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>GitHub</span>
                                     </div>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={gitLogo} alt='Git Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>Git</span>
+                                        <img src={gitLogo} alt='Git Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>Git</span>
                                     </div>
                                     
                                     <div className='flex flex-col items-center'>
-                                        <img src={htmlLogo} alt='HTML Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>HTML</span>
+                                        <img src={htmlLogo} alt='HTML Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>HTML</span>
                                     </div>
 
                                     <div className='flex flex-col items-center'>
-                                        <img src={muiLogo} alt='MUI Logo' className='w-12 h-12' />
-                                        <span className='text-white mt-2 text-sm'>Material UI</span>
+                                        <img src={muiLogo} alt='MUI Logo' className='w-8 h-8 md:w-12 md:h-12' />
+                                        <span className='text-white mt-2 text-xs md:text-sm'>Material UI</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id='proyectos' className='bg-gradient-to-r from-blue-start to-blue-end p-24'>
+                <section id='proyectos' className='bg-gradient-to-r from-blue-start to-blue-end p-6 md:p-24'>
                     <div>
                         <div>
                             <span className='text-white text-2xl font-lato font-bold flex justify-center'>Mis proyectos</span>
                         </div>
-                        <div className='flex items-center justify-center mt-10'>
+                        <div className='flex flex-col md:flex-row items-center justify-center mt-10'>
                             
-                            <div className='transition transform hover:scale-105 duration-450'>
+                            <div className='transition transform hover:scale-105 duration-450 mb-10 md:mb-0 md:mr-10'>
                                 <Card sx={{ 
                                     maxWidth: 345, 
                                     backgroundColor: '#1f2937',
@@ -251,14 +257,14 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <section id='experiencia' className='bg-blue-mid p-24'>
+                <section id='experiencia' className='bg-blue-mid p-6 md:p-24'>
                     <div className="max-w-2xl flex flex-col mx-auto">
-                        <span className='text-white font-lato text-2xl font-bold'>Experiencia laboral.</span>
+                        <span className='text-white font-lato text-xl md:text-2xl font-bold'>Experiencia laboral.</span>
                         <hr className='mt-2 mb-4'/>
-                        <span className='text-gray-300 font-lato mt-2'>Corporación Elyon Yireh de Barranquilla | Junio 2024 - Julio 2024</span>
-                        <span className='text-gray-300 font-lato font-bold ml-1'>Programador junior</span>
+                        <span className='text-gray-300 font-lato mt-2 text-sm md:text-md '>Corporación Elyon Yireh de Barranquilla | Junio 2023 - Julio 2024</span>
+                        <span className='text-gray-300 font-lato font-bold text-sm md:text-md'>Programador junior</span>
                     
-                        <ul className='text-gray-300 font-lato mt-4 list-disc list-inside'>
+                        <ul className='text-gray-300 font-lato mt-4 list-disc list-inside text-sm md:text-md'>
                             <li>Desarrollo de una aplicación web full-stack, abarcando el backend con Django Rest Framework y el frontend con ReactJS, para la gestión de datos estudiantiles.</li>
                             <li>Diseño moderno e interactivo para el frontend con TailwindCSS.</li>
                             <li>Creación de herramientas adicionales con Python para gestionar las actualizaciones de la aplicación.</li>
